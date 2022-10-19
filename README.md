@@ -111,6 +111,6 @@ Really want to perfect on overlays and positioning items on top of other element
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/cybermaxi7)
-- Twitter - [@yourusername](https://www.twitter.com/cybermaxi7)
+- Frontend Mentor - [@cybermaxi7](https://www.frontendmentor.io/profile/cybermaxi7)
+- Twitter - [@cybermaxi7](https://www.twitter.com/cybermaxi7)
 
