@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary1: hsl(215, 51%, 70%);
+  --color-primary2: hsl(178, 100%, 50%);
+  --color-bg: hsl(217, 54%, 11%);
+  --color-cardBG: hsl(216, 50%, 16%);
+  --color-line: hsl(215, 32%, 27%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 112.5%;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+}
+
+.container {
+  background-color: var(--color-cardBG);
+  width: 21rem;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+
+.img__container {
+  background-color: var(--color-primary2);
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+  
+.img {
+  opacity: 1;
+  object-fit: cover;
+  max-width: 100%;
+  display: block;
+}
+.img__container svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.img:hover {
+
+  opacity: .5;
+}
+
+.img:hover ~ svg{
+  opacity: 1;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+
+.content__heading {
+  margin: 1.2rem 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.content__heading:active,
+.content__heading:hover {
+  color: var(--color-primary2);
+  cursor: pointer;
+}
+
+.content__paragraph {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-primary1);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+}
+
+.container__row {
+  width: 100%;
+  border-bottom: 1px solid var(--color-line);
+  margin-bottom: 1rem;
+}
+
+.price {
+  color: var(--color-primary2);
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.price span {
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+.duration {
+  font-weight: 700;
+  color: var(--color-primary1);
+  display: flex;
+  align-items: center;
+}
+
+.duration span {
+  margin-left: 0.5rem;
+}
+
+.createdBy {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.createdBy img {
+  width: 12%;
+  margin-right: 1rem;
+}
+
+.creator span {
+  color: var(--color-primary1);
+}
+
+.creator {
+  font-size: 0.9rem;
+}
+.creator:active,
+.creator:hover {
+  color: var(--color-primary2);
+  cursor: pointer;
+}
